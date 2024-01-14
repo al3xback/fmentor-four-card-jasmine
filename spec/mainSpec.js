@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 const { JSDOM } = jsdom;
 
-const url = 'https://al3xback.github.io/fmentor-four-card-mocha/';
+const url = 'https://al3xback.github.io/fmentor-four-card-jasmine/';
 
 const getData = async () => {
 	return fetch(url)

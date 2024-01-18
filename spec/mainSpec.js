@@ -34,8 +34,8 @@ describe('DOM', () => {
 
 		for (let i = 0; i < cardImgEls.length; i++) {
 			const cardImgEl = cardImgEls[i];
-			const cardImgWidth = cardImgEl.width;
-			const cardImgHeight = cardImgEl.height;
+			const cardImgWidth = parseInt(cardImgEl.getAttribute('width'));
+			const cardImgHeight = parseInt(cardImgEl.getAttribute('height'));
 
 			expect(cardImgWidth).toBeInstanceOf(Number);
 			expect(cardImgHeight).toBeInstanceOf(Number);

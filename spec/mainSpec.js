@@ -43,10 +43,10 @@ describe('DOM', () => {
 	});
 
 	it("should have a title element that contains 'Reliable, efficient delivery' word", () => {
-		const sectionTitleEl = document.querySelector('.cards-summary__title');
-		const sectionTitle = sectionTitleEl.textContent.trim();
+		const cardsSummaryTitleEl = document.querySelector('.cards-summary__title');
+		const cardsSummaryTitle = cardsSummaryTitleEl.textContent.trim();
 
-		expect(sectionTitle).toContain('Reliable, efficient delivery');
+		expect(cardsSummaryTitle).toContain('Reliable, efficient delivery');
 	});
 
 	it('should have two children inside of the section element', () => {

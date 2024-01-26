@@ -43,7 +43,9 @@ describe('DOM', () => {
 	});
 
 	it("should have a title element that contains 'Reliable, efficient delivery' word", () => {
-		const cardsSummaryTitleEl = document.querySelector('.cards-summary__title');
+		const cardsSummaryTitleEl = document.querySelector(
+			'.cards-summary__title'
+		);
 		const cardsSummaryTitle = cardsSummaryTitleEl.textContent.trim();
 
 		expect(cardsSummaryTitle).toContain('Reliable, efficient delivery');
